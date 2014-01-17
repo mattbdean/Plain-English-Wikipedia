@@ -1,0 +1,25 @@
+{
+	"manifest_version": 2,
+
+	"name": "simple.wikipedia redirecter",
+	"description": "Redirects you to simple.wikipedia.org if the current article is available",
+	"version": "1.0",
+
+	"content_scripts": [
+		{
+			"matches": ["*://en.wikipedia.org/wiki/*"],
+			"css": ["simple_available.css"],
+			"js": ["jquery.min.js", "simple_available.js"],
+
+			"run_at": "document_end"
+		}
+	],
+
+	"permissions": [
+		"*://simple.wikipedia.org/wiki/*"
+	],
+
+	"web_accessible_resources": [
+		"jquery.min.map"
+	]
+}
