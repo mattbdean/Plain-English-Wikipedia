@@ -1,11 +1,11 @@
 #Plain-English-Wikipedia
 This Chrome extension aims to easily let the user know when there is a more simple version of the document they are currently reading.
 
-####Without Plain-English-Wikipedia
+**Without Plain-English-Wikipedia**
 
 ![without](http://i.imgur.com/0zzeEZ8.png)
 
-####With Plain-English-Wikipedia:
+**With Plain-English-Wikipedia:**
 
 ![with](http://i.imgur.com/2r5E4Wu.png)
 
