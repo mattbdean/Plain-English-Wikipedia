@@ -1,17 +1,14 @@
 {
 	"manifest_version": 2,
 
-	"name": "simple.wikipedia redirecter",
-	"description": "Redirects you to simple.wikipedia.org if the current article is available",
+	"name": "Plain English Wikipedia",
+	"description": "Provides a link to a plain English version of Wikipedia (if it's available)",
 	"version": "1.0",
 
 	"content_scripts": [
 		{
 			"matches": ["*://en.wikipedia.org/wiki/*"],
-			"css": ["simple_available.css"],
-			"js": ["jquery.min.js", "simple_available.js"],
-
-			"run_at": "document_end"
+			"js": ["lib/jquery.min.js", "simple_available.js"]
 		}
 	],
 
@@ -20,6 +17,7 @@
 	],
 
 	"web_accessible_resources": [
+		// Prevent errors with jQuery trying to load the map file
 		"jquery.min.map"
 	]
 }
